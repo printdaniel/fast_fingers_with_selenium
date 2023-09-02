@@ -11,19 +11,22 @@ from selenium.webdriver.support.ui import WebDriverWait
 options = webdriver.ChromeOptions()
 options.add_argument('--start-maximized')
 options.add_argument('--disable-extensions')
-options.add_experimental_option('detach', True)
-options.add_argument('--incognito')
+options.add_experimental_option('detach', True) # para que no se cierre
+options.add_argument('--incognito') # para que muestre menos publicidad
 
-def run():
+def step1():
     ##################### Part 1 #######################
     chrome_driver = webdriver.Chrome(options=options)
     chrome_driver.get(FAST_FINGERS)
 
     ##################### Part 2 #######################
     start_wait = WebDriverWait(chrome_driver, 30)
-    #exit()
 
-
+    deny_button = start_wait.until(
+            element_to_be_clickable(
+                By.XPATH,"//*[@id='CybotCookiebotDialogBodyButtonDecline']"
+                )
+            ).click()
 
 
 
@@ -32,4 +35,4 @@ def run():
 
 
 if __name__ == '__main__':
-    run()
+    step1()
