@@ -30,7 +30,7 @@ def step1():
 
 
 
-
+div_elements = start_wait.until(EC.element_to_be_clickable((By.XPATH, //*[@id="words"]))
 
 
 
