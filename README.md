@@ -21,3 +21,19 @@ una forma más divertida de practicar la mecanografía.**
 * source/venv/bin/activate
 * pip install -r requirements.txt
 * python main.py
+
+
+
+### Proceso de creación
+
+** En el notbook se puede apreciar el proceso de creación del script, en él
+se aprecia como la táctica de capturar toda la lista de palabras no funciona, 
+el problema consistía en que Selenium solo reconoce las palabras visibles en la 
+caja de texto. 
+La primer solución a este inconveniente consitió en volver a ejecutar la capturara
+de palabras una vez leída las que se mostraban en la caja, pero nuevamente surgió 
+otro problema; Selenium capturaba las nuevas palabras y también las que ya se 
+habían mostrado; intentar solucionar esto con un indice en la lista tampoco funcionaba 
+ya que la cantidad de palabras variaba y la posición del índice también.
+Solución tres, capturar palabra a palabra; esto hacía el script más lento pero funciona 
+correcto **
