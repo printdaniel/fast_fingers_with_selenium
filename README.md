@@ -17,7 +17,7 @@ una forma más divertida de practicar la mecanografía.**
 
 ## Instrucciones de uso
 
-** python -m venv venv
-** source/venv/bin/activate
-** pip install -r requirements.txt
-** python main.py
+* python -m venv venv
+* source/venv/bin/activate
+* pip install -r requirements.txt
+* python main.py
