@@ -22,8 +22,6 @@ una forma más divertida de practicar la mecanografía.**
 * pip install -r requirements.txt
 * python main.py
 
-
-
 ### Proceso de creación
 
 ** En el notbook se puede apreciar el proceso de creación del script, en él
